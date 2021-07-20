@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    
 </head>
 
 <body>
@@ -118,13 +119,17 @@
             <div class="content">&nbsp;• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span></div>
         </div>
     </div>
+    
+    
 
-    <form id="contactform">
+    <form action="contactform.php" method="post" id="contactform">
+        
         <input name="name" type="text" class="feedback-input" placeholder="Name" />
 
         <input name="email" type="text" class="feedback-input" placeholder="Email" />
 
         <select name="Select an Option" type="text" class="feedback-input">
+            
             <option value="" disabled selected hidden class="feedback-input">Select an Option</option>
             <option>Seeking License Deal with OneTeam Property</option>
             <option>Seeking Athletes for Marketing & Appearances</option>
@@ -133,9 +138,11 @@
 
         </select>
 
-        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+        <textarea name="message" class="feedback-input" placeholder="Message"></textarea>
 
         <input type="submit" value="SUBMIT" />
+        
+    
     </form>
 
 
