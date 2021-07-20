@@ -1,11 +1,10 @@
 html {
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%
+    overflow-x: hidden;
 }
 
 body {
-    margin: 0;
-    overflow-x: hidden;
+    margin: 0;    
 }
 
 
@@ -202,6 +201,10 @@ li {
     li {
         line-height: 2;
         font-size: 16px;
+    }
+    
+    .copy {
+        padding: 2rem;
     }
 
 }
