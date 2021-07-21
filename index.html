@@ -45,12 +45,12 @@
     </div>
 
     <div class="block" id="hero">
-        <h1 class="herocopy">ONETEAM<div id="word">CREATES OPPORTUNITIES.</div>
+        <h1 class="herocopy">ONETEAM<div id="word">CREATES OPPORTUNITIES</div>
         </h1>
     </div>
 
     <div class="block" id="who">
-        <h1 style="padding: 1% 5%;">OneTeam Partners is a one-of-a-kind solution helping athletes maximize the value of their name, image, and likeness rights. OneTeam specializes in group licensing, marketing, media, and investing.<br><br> Through partnerships with Players Associations, OneTeam’s mission is to transform the way all athletes participate in business by putting them squarely at the center of the commercial ecosystem.</h1>
+        <h1 class="intro">OneTeam Partners is a one-of-a-kind solution helping athletes maximize the value of their name, image, and likeness rights. OneTeam specializes in group licensing, marketing, media, and investing.<br><br> Through partnerships with Players Associations, OneTeam’s mission is to transform the way all athletes participate in business by putting them squarely at the center of the commercial ecosystem.</h1>
 
 
         <h1 class="partnersheader">OUR PARTNERS</h1>
@@ -130,7 +130,7 @@
 
         <select name="select" type="text" class="feedback-input">
             
-            <option value="" disabled selected hidden class="feedback-input">Select an Option</option>
+            <option value="" disabled selected hidden class="feedback-input" style="color: #757575">Select an Option</option>
             <option value="license">Seeking License Deal with OneTeam Property</option>
             <option value="athletes">Seeking Athletes for Marketing & Appearances</option>
             <option value="grouplicensing">Seeking OneTeam's Group Licensing Services</option>
@@ -180,7 +180,8 @@
         jQuery('#partner1').mouseover(function() {
             jQuery(this).parent().css({
                 "background-image": "url(images/nflpa.png)",
-                "background-position": "center"
+                "background-position": "center",
+                "background-repeat": "no-repeat"
             });
         });
 
