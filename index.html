@@ -12,13 +12,15 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="OneTeam Partners" />
     <meta property="og:url" content="http://joinoneteam.com" />
-    <meta property="og:description" content="OneTeam helps athletes maximize the value of their name, image, and likeness rights.">
+    <meta property="og:description"
+        content="OneTeam helps athletes maximize the value of their name, image, and likeness rights.">
 
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="OneTeam">
     <meta name="twitter:url" content="http://joinoneteam.com">
-    <meta name="twitter:description" content="OneTeam helps athletes maximize the value of their name, image, and likeness rights.">
+    <meta name="twitter:description"
+        content="OneTeam helps athletes maximize the value of their name, image, and likeness rights.">
 
 
     <link rel="icon" href="images/favicon16.png" sizes="16x16">
@@ -27,22 +29,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    
+
 </head>
 
 <body>
     <a name="top"></a>
 
-    <div class="topnav" id="myTopnav">
+    <header class="header">
         <img class="topnavlogo" src="images/headerlogo.svg" alt="OneTeam Logo">
-        <a href="#contactform">CONTACT</a>
-        <a href="#careers">CAREERS</a>
-        <a href="#grouplicensing_marquee">WHAT</a>
-        <a href="#who">WHO</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-            <img class="foot" src="images/footer.svg" alt="OneTeam Logo">
-        </a>
-    </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li id="headerlist"><a href="#who">WHO</a></li>
+            <li id="headerlist"><a href="#grouplicensing_marquee">WHAT</a></li>
+            <li id="headerlist"><a href="#careers">CAREERS</a></li>
+            <li id="headerlist"><a href="#contact_marquee">CONTACT</a></li>
+        </ul>
+    </header>
 
     <div class="block" id="hero">
         <h1 class="herocopy">ONETEAM<div id="word">CREATES OPPORTUNITIES</div>
@@ -50,7 +53,11 @@
     </div>
 
     <div class="block" id="who">
-        <h1 class="intro">OneTeam Partners is a one-of-a-kind solution helping athletes maximize the value of their name, image, and likeness rights. OneTeam specializes in group licensing, marketing, media, and investing.<br><br> Through partnerships with Players Associations, OneTeam’s mission is to transform the way all athletes participate in business by putting them squarely at the center of the commercial ecosystem.</h1>
+        <h1 class="intro">OneTeam Partners is a one-of-a-kind solution helping athletes maximize the value of their
+            name, image, and likeness rights. OneTeam specializes in group licensing, marketing, media, and
+            investing.<br><br> Through partnerships with Players Associations, OneTeam’s mission is to transform the way
+            all athletes participate in business by putting them squarely at the center of the commercial ecosystem.
+        </h1>
 
 
         <h1 class="partnersheader">OUR PARTNERS</h1>
@@ -76,61 +83,81 @@
 
     <div class="marquee" id="grouplicensing_marquee">
         <div class="track">
-            <div class="content">&nbsp;• Group Licensing •<span> Group Licensing </span>• Group Licensing •<span> Group Licensing </span>• Group Licensing •<span> Group Licensing </span>• Group Licensing •<span> Group Licensing </span>• Group Licensing •<span> Group Licensing </span></div>
+            <div class="content">&nbsp;• Group Licensing •<span> Group Licensing </span>• Group Licensing •<span> Group
+                    Licensing </span>• Group Licensing •<span> Group Licensing </span>• Group Licensing •<span> Group
+                    Licensing </span>• Group Licensing •<span> Group Licensing </span></div>
         </div>
     </div>
 
     <div class="block" id="grouplicensing">
-        <h1 class="copy" id="glcopy">OneTeam is the only company in sports that specializes in the collective licensing rights of athletes. Representing group licensing rights on behalf of six different Players Associations, OneTeam works to maximize the value of player rights across digital games, trading cards, apparel, merchandise, and more.</h1>
+        <h1 class="copy" id="glcopy">OneTeam is the only company in sports that specializes in the collective licensing
+            rights of athletes. Representing group licensing rights on behalf of six different Players Associations,
+            OneTeam works to maximize the value of player rights across digital games, trading cards, apparel,
+            merchandise, and more.</h1>
     </div>
 
     <div class="marquee" id="marketing_marquee">
         <div class="track">
-            <div class="content">&nbsp;• Marketing •<span> Marketing </span>• Marketing •<span> Marketing </span>• Marketing •<span> Marketing </span>• Marketing •<span> Marketing </span>• Marketing •<span> Marketing </span></div>
+            <div class="content">&nbsp;• Marketing •<span> Marketing </span>• Marketing •<span> Marketing </span>•
+                Marketing •<span> Marketing </span>• Marketing •<span> Marketing </span>• Marketing •<span> Marketing
+                </span></div>
         </div>
     </div>
 
     <div class="block" id="marketing">
-        <h1 class="copy" id="marketingcopy">OneTeam develops authentic relationships between athletes and brands and delivers integrated, turnkey solutions across sponsorship, athlete marketing, content, and digital marketing.</h1>
+        <h1 class="copy" id="marketingcopy">OneTeam develops authentic relationships between athletes and brands and
+            delivers integrated, turnkey solutions across sponsorship, athlete marketing, content, and digital
+            marketing.</h1>
     </div>
 
     <div class="marquee" id="media_marquee">
         <div class="track">
-            <div class="content">&nbsp;• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span></div>
+            <div class="content">&nbsp;• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media
+                </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media
+                •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media </span>• Media •<span> Media
+                </span></div>
         </div>
     </div>
 
     <div class="block" id="media">
-        <h1 class="copy" id="mediacopy">OneTeam serves as a one-stop production partner for brands, licensees, players associations, and our athlete partners, creating sports-lifestyle content that amplifies authentic athlete interests and passions – from gaming to cooking, and everything in between.</h1>
+        <h1 class="copy" id="mediacopy">OneTeam serves as a one-stop production partner for brands, licensees, players
+            associations, and our athlete partners, creating sports-lifestyle content that amplifies authentic athlete
+            interests and passions – from gaming to cooking, and everything in between.</h1>
     </div>
 
     <div class="marquee" id="investing_marquee">
         <div class="track">
-            <div class="content">&nbsp;• Investing •<span> Investing </span>• Investing •<span> Investing </span>• Investing •<span> Investing </span>• Investing •<span> Investing </span>• Investing •<span> Investing </span>• Investing •<span> Investing </span></div>
+            <div class="content">&nbsp;• Investing •<span> Investing </span>• Investing •<span> Investing </span>•
+                Investing •<span> Investing </span>• Investing •<span> Investing </span>• Investing •<span> Investing
+                </span>• Investing •<span> Investing </span></div>
         </div>
     </div>
 
     <div class="block" id="investing">
-        <h1 class="copy" id="investingcopy">OneTeam leverages the influence and strategic value of athletes to drive deal flow and secure placement on highly coveted cap tables.</h1>
+        <h1 class="copy" id="investingcopy">OneTeam leverages the influence and strategic value of athletes to drive
+            deal flow and secure placement on highly coveted cap tables.</h1>
     </div>
 
     <div class="marquee" id="contact_marquee">
         <div class="track">
-            <div class="content">&nbsp;• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span></div>
+            <div class="content">&nbsp;• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch
+                </span>• Get in Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span>• Get in
+                Touch •<span> Get in Touch </span>• Get in Touch •<span> Get in Touch </span></div>
         </div>
     </div>
-    
-    
+
+
 
     <form action="contactform.php" method="post" id="contactform">
-        
+
         <input name="name" type="text" class="feedback-input" placeholder="Name" />
 
         <input name="email" type="text" class="feedback-input" placeholder="Email" />
 
         <select name="select" type="text" class="feedback-input">
-            
-            <option value="" disabled selected hidden class="feedback-input" style="color: #757575">Select an Option</option>
+
+            <option value="" disabled selected hidden class="feedback-input" style="color: #757575">Select an Option
+            </option>
             <option value="license">Seeking License Deal with OneTeam Property</option>
             <option value="athletes">Seeking Athletes for Marketing & Appearances</option>
             <option value="grouplicensing">Seeking OneTeam's Group Licensing Services</option>
@@ -142,8 +169,8 @@
         <textarea name="message" class="feedback-input" placeholder="Message"></textarea>
 
         <input type="submit" value="SUBMIT" />
-        
-    
+
+
     </form>
 
 
@@ -176,8 +203,8 @@
 </body>
 
 <script>
-    jQuery(function() {
-        jQuery('#partner1').mouseover(function() {
+    jQuery(function () {
+        jQuery('#partner1').mouseover(function () {
             jQuery(this).parent().css({
                 "background-image": "url(images/nflpa.png)",
                 "background-position": "center",
@@ -185,69 +212,68 @@
             });
         });
 
-        jQuery('#partner1').mouseleave(function() {
+        jQuery('#partner1').mouseleave(function () {
             jQuery(this).parent().css('background-image', "none");
         });
     });
 
-    jQuery('#partner2').mouseover(function() {
+    jQuery('#partner2').mouseover(function () {
         jQuery(this).parent().css({
             "background-image": "url(images/uswntpa.png)",
             "background-position": "center"
         });
     });
 
-    jQuery('#partner2').mouseleave(function() {
+    jQuery('#partner2').mouseleave(function () {
         jQuery(this).parent().css('background-image', "none");
     });
 
 
-    jQuery('#partner3').mouseover(function() {
+    jQuery('#partner3').mouseover(function () {
         jQuery(this).parent().css({
             "background-image": "url(images/wnbapa.png)",
             "background-position": "center"
         });
     });
 
-    jQuery('#partner3').mouseleave(function() {
+    jQuery('#partner3').mouseleave(function () {
         jQuery(this).parent().css('background-image', "none");
     });
 
-    jQuery('.partner4').mouseover(function() {
+    jQuery('.partner4').mouseover(function () {
         jQuery(this).parent().css({
             "background-image": "url(images/mlbpa.png)",
             "background-position": "center"
         });
     });
 
-    jQuery('.partner4').mouseleave(function() {
+    jQuery('.partner4').mouseleave(function () {
         jQuery(this).parent().css('background-image', "none");
     });
 
 
-    jQuery('.partner5').mouseover(function() {
+    jQuery('.partner5').mouseover(function () {
         jQuery(this).parent().css({
             "background-image": "url(images/mlspa.png)",
             "background-position": "center"
         });
     });
 
-    jQuery('.partner5').mouseleave(function() {
+    jQuery('.partner5').mouseleave(function () {
         jQuery(this).parent().css('background-image', "none");
     });
 
 
-    jQuery('.partner6').mouseover(function() {
+    jQuery('.partner6').mouseover(function () {
         jQuery(this).parent().css({
             "background-image": "url(images/usrpa.png)",
             "background-position": "center"
         });
     });
 
-    jQuery('.partner6').mouseleave(function() {
+    jQuery('.partner6').mouseleave(function () {
         jQuery(this).parent().css('background-image', "none");
     });
-
 </script>
 
 </html>
