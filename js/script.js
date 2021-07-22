@@ -1,15 +1,4 @@
- //Responsive Top Nav
- function responsiveNav() {
-     var x = document.getElementById("myTopnav");
-     if (x.className === "topnav") {
-         x.className += " responsive";
-     } else {
-         x.className = "topnav";
-     }
- }
- //end responsive top nav
-
- //Replace Text function		
+//Replace Text function		
  $(function () {
      count = 0;
      wordsArray = ["CREATES OPPORTUNITIES", "MAKES MOMENTS HAPPEN", "CHANGES THE GAME"];
