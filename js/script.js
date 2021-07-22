@@ -4,15 +4,15 @@
      wordsArray = ["CREATES OPPORTUNITIES", "MAKES MOMENTS HAPPEN", "CHANGES THE GAME"];
      setInterval(function () {
          count++;
-         $("#word").fadeOut(1250, function () {
-             $(this).text(wordsArray[count % wordsArray.length]).fadeIn(1000);
+         $("#word").fadeOut(3000, function () {
+             $(this).text(wordsArray[count % wordsArray.length]).fadeIn(2000);
          });
      }, 3000);
  });
  //End Replace Text function
 
 
- //Form Validation
+ /* Form Validation
    const constraints = {
        name: {
            presence: { allowEmpty: false }
@@ -47,4 +47,4 @@
        alert(errorMessage);
      }
    }, false);
- //End Form Validation
+ /*/
