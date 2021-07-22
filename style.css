@@ -12,7 +12,7 @@ body {
 
 @font-face {
     font-family: 'FoundersGrotesk';
-    src: url('fonts/founders-grotestk-mono-web-regular.woff2') format('woff2');
+    src: url('/fonts/test-founders-grotesk-text-regular.woff2') format('woff2');
     font-weight: 400;
     font-style: regular;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .FoundersGrotesk {
-    font-family: 'FoundersGrotesk', monospace;
+    font-family: 'FoundersGrotesk', Helvetica, sans-serif;
 }
 
 .FoundersGroteskCond {
@@ -62,7 +62,7 @@ h1 {
 .herocopy {
     text-align: center;
     color: white;
-    font-size: 3rem;
+    font-size: 3em;
     font-family: "FoundersGroteskCond", sans-serif;
     font-style: bold;
     position: relative;
@@ -168,6 +168,10 @@ li {
     color: black;
 }
 
+#headerlist a {
+    color: black;
+}
+
 #headerlist a:hover {
     color: white;
 }
@@ -267,13 +271,43 @@ li {
 }
 
 @media screen and (max-width: 800px) {
-    .partners {
-        float: left;
-        min-width: 100vw;
-    }
-
     #contactform {
         max-width: 60%;
+        margin: 5% auto;
+    }
+
+    li {
+        line-height: 2;
+        font-size: 16px;
+    }
+
+    li a:hover li a:active {
+        background-color: transparent;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .copy {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .header li {
+        padding-left: 0em;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .header li a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contactform {
+        max-width: 50%;
         margin: 5% auto;
     }
 
@@ -290,8 +324,27 @@ li {
         padding: 2rem;
     }
 
-    .footeritem a {
-        font-size: 16px;
+    .header li {
+        padding-left: 0em;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .header li a {
+        width: 100%;
+    }
+
+    .herocopy {
+        font-size: 20pt;
+    }
+
+    .intro {
+        font-size: 12pt;
+    }
+
+    ul {
+        padding-left: 5%;
+        text-align: center;
     }
 }
 
@@ -326,15 +379,65 @@ li {
     width: 100vw;
 }
 
-.partners {
-    margin-left: auto;
-    display: inline;
-    width: 50%;
-    float: left;
-    padding-bottom: 1rem;
-    z-index: 1;
-    background-color: none;
-    word-break: break-word;
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 25px 5%;
+    text-align: center;
+    width: 90%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 12%;
+    max-width: 25%;
+    padding: 0 0px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 75%;
+    height: 100px
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .column img {
+        max-height: 75px;
+        padding-bottom: 45px;
+    }
+
+    .row {
+        text-align: center;
+
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column img {
+        max-height: 75px;
+        padding-bottom: 45px;
+    }
 }
 
 
@@ -488,10 +591,26 @@ textarea {
     margin-top: -4px;
     font-weight: 500;
     letter-spacing: 2px;
+    -webkit-appearance: none;
 }
 
 [type="submit"]:hover {
     background: #CC4949;
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        margin-top: 15px;
+    }
+
+
+    .feedback-input {
+        font-size: 12px;
+        background-color: transparent;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
 }
 
 
@@ -509,10 +628,23 @@ textarea {
 
 .footeritem {
     display: inline-block;
-    width: 22%;
+    width: 25%;
     color: black;
     text-decoration: none;
     font-size: 1.25rem;
+}
+
+@media screen and (max-width: 600px) {
+    .footeritem {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footeritem {
+        width: auto;
+        padding: 15px;
+    }
 }
 
 .footeritem a {
