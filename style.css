@@ -12,7 +12,7 @@ body {
 
 @font-face {
     font-family: 'FoundersGrotesk';
-    src: url('/fonts/test-founders-grotesk-text-regular.woff2') format('woff2');
+    src: url('fonts/test-founders-grotesk-text-regular.woff2') format('woff2');
     font-weight: 400;
     font-style: regular;
 }
