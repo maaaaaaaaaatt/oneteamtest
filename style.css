@@ -581,7 +581,7 @@ textarea {
 }
 
 option {
-    font-family: inherit;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 [type="submit"] {
