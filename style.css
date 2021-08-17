@@ -12,8 +12,7 @@ body {
 
 @font-face {
     font-family: 'FoundersGrotesk';
-    src: url('fonts/test-founders-grotesk-text-regular.woff2') format('woff2');
-    font-weight: 400;
+    src: url('fonts/founders-grotesk-text-web-regular.woff2') format('woff2');
     font-style: regular;
 }
 
@@ -47,7 +46,7 @@ body {
 h1 {
     font-family: 'FoundersGrotesk', monospace;
     text-align: justify;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .partnersheader {
@@ -81,7 +80,6 @@ h1 {
     text-align: justify;
     padding: 13rem;
     color: white;
-    font-weight: 200;
     font-size: 26px;
 }
 
@@ -99,6 +97,10 @@ h1 {
 
 #investingcopy::selection {
     background-color: #B36CEB;
+}
+
+#collegecopy::selection {
+    background-color: #6ca5eb;
 }
 
 ul {
@@ -481,6 +483,14 @@ li {
     background-repeat: no-repeat;
 }
 
+#college {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url(images/nfl.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 /* -----> Marquee Controls <----- */
@@ -542,6 +552,10 @@ li {
 
 #investing_marquee {
     background-color: #B36CEB;
+}
+
+#college_marquee {
+    background-color: #6ca5eb;
 }
 
 #contact_marquee {
@@ -676,4 +690,49 @@ option {
 
 .foot {
     width: 30px;
+}
+
+/* -----> GLA Stlyes <----- */
+.table3 {
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+}
+
+.table2 {
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+    text-align: center;
+}
+
+.tablecopy {
+    padding: 0% 15%;
+    font-size: 22pt;
+    color: white;
+}
+
+.ctacopy {
+    padding: 0% 15%;
+    font-size: 22pt;
+    color: white;
+    text-align: center;
+}
+
+.ctabutton {
+    font-family: 'FoundersGroteskCond', arial;
+    width: 50%;
+    background: #EB6C6C;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    -webkit-appearance: none;
 }
