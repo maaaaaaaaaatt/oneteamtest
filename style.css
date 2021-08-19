@@ -144,6 +144,7 @@ li {
     overflow: hidden;
     background-color: #fff;
     width: auto;
+    height: auto;
 }
 
 .header li {
@@ -238,7 +239,7 @@ li {
 }
 
 .header .menu-btn:checked~.menu {
-    max-height: 240px;
+    max-height: fit-content
 }
 
 .header .menu-btn:checked~.menu-icon .navicon {
@@ -258,7 +259,7 @@ li {
     top: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1026px) {
     .header li {
         float: left;
     }
@@ -276,6 +277,18 @@ li {
 
     .header .menu-icon {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1026px) {
+    .header li {
+        padding-left: 0em;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .header li a {
+        width: 100%;
     }
 }
 
@@ -651,7 +664,7 @@ option {
 
 .footeritem {
     display: inline-block;
-    width: 23%;
+    width: 20%;
     color: black;
     text-decoration: none;
     font-size: 1.25rem;
@@ -685,7 +698,7 @@ option {
 .footerlogo {
     height: auto;
     width: 100%;
-    padding-top: 15px;
+    padding-top: 25px;
     padding-bottom: 15px;
 }
 
@@ -722,6 +735,14 @@ img {
     text-align: center;
     vertical-align: top;
 
+}
+
+.textcontainer {
+    height: auto;
+    background-color: transparent;
+    padding: 3% 0%;
+    margin: 1% 7% 2%;
+    border: 2px solid black;
 }
 
 .ctacopy {
