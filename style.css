@@ -720,8 +720,13 @@ option {
 img {
     width: auto;
     height: auto;
-    max-height: 200px;
+    max-height: 175px;
     text-align: center;
+}
+
+.exampleimg {
+    width: 100%;
+    max-height: 100%;
 }
 
 .box {
@@ -734,7 +739,18 @@ img {
     margin: 20px;
     text-align: center;
     vertical-align: top;
+}
 
+.example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 45%;
+    min-width: 18rem;
+    margin: 20px;
+    text-align: center;
+    vertical-align: top;
 }
 
 .textcontainer {
@@ -750,38 +766,6 @@ img {
     font-size: 22pt;
     color: white;
     text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-    .ctacopy {
-        padding: 2rem;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .ctacopy {
-        padding: 2rem;
-        font-size: 16pt;
-    }
-}
-
-.ctabutton {
-    font-family: 'FoundersGroteskCond', arial;
-    width: 50%;
-    background: #EB6C6C;
-    border-radius: 5px;
-    border: 0;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    -webkit-appearance: none;
 }
 
 .marqueegla {
@@ -818,4 +802,62 @@ img {
     to {
         transform: translateX(-50%);
     }
+}
+
+@media screen and (max-width: 890px) {
+    .example {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 90%;
+        min-width: 18rem;
+        margin: 20px;
+        text-align: center;
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ctacopy {
+        padding: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ctacopy {
+        padding: 2rem;
+        font-size: 16pt;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+        max-height: 100px;
+        text-align: center;
+    }
+
+    .marqueegla {
+        height: 37px;
+        font-size: 25px;
+    }
+}
+
+.ctabutton {
+    font-family: 'FoundersGroteskCond', arial;
+    width: 50%;
+    background: #6ca5eb;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    -webkit-appearance: none;
 }

@@ -130,6 +130,37 @@
 
    <div class="marqueegla" id="media_marquee">
       <div class="track">
+         <div class="content">&nbsp;• Examples •<span> Examples </span>• Examples •<span> Examples </span>•
+            Examples •<span> Examples </span>• Examples •<span> Examples </span>• Examples •<span>
+               Examples
+            </span>• Examples •<span> Examples </span></div>
+      </div>
+   </div>
+
+   <div class="container" style="margin-bottom: 3rem;">
+      <div class="example">
+         <img src="images/wnba.png" class="exampleimg">
+         <h1 class="intro" style="text-align: center;">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+            Nullam metus erat,
+            rutrum vitae</h1>
+         <button class="ctabutton">Read More</button>
+      </div>
+
+      <div class="example">
+         <img src="images/mlb.png" class="exampleimg">
+         <h1 class="intro" style="text-align: center;">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+            Nullam metus erat,
+            rutrum vitae</h1>
+         <button class="ctabutton">Read More</button>
+      </div>
+   </div>
+
+
+   <!--
+   <div class="marqueegla" id="media_marquee">
+      <div class="track">
          <div class="content">&nbsp;• Sign Up •<span> Sign Up </span>• Sign Up •<span> Sign Up </span>•
             Sign Up •<span> Sign Up </span>• Sign Up •<span> Sign Up </span>• Sign Up •<span>
                Sign Up
@@ -143,7 +174,7 @@
             rutrum vitae</h1>
          <button class="ctabutton">SIGN UP FOR GROUP LICENSING</button>
       </div>
-      <!--
+
       <table width="100%">
          <tbody>
             <tr valign="top">
@@ -163,8 +194,8 @@
             </tr>
          </tbody>
       </table>
-      -->
    </div>
+-->
 
    <div class="marqueegla" id="contact_marquee">
       <div class="track">
@@ -176,14 +207,29 @@
       </div>
    </div>
 
-   <form action="contactform.php" method="post" id="contactform">
+   <div class="container">
+      <h1 class="ctacopy" id="ctacopy" style="color: black; padding-bottom: 0px;">Lorem ipsum dolor sit amet,
+         consectetur adipiscing elit.
+         Nullam metus erat,
+         rutrum vitae</h1>
+   </div>
+
+   <form action="contactform.php" method="post" id="contactform" style="margin: 1% auto 5%;
+   ">
 
       <input name="name" type="text" class="feedback-input" placeholder="Name" />
 
       <input name="email" type="text" class="feedback-input" placeholder="Email" />
 
 
-      <textarea name="message" class="feedback-input" placeholder="Message"></textarea>
+      <div class="feedback-input">
+
+         <input type="checkbox" name="checkbox" checked>
+
+         <label for="checkbox">I would like to register my interest for collegiate group licensing</label>
+      </div>
+
+
 
       <input type="submit" value="SUBMIT" />
 
