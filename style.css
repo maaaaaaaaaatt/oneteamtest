@@ -867,10 +867,16 @@ img {
     color: white;
     text-decoration: none;
     cursor: pointer;
+    width: 100%;
 }
 
 .ctabutton:hover {
     background: #1f4e89;
+}
+
+.example a {
+    width: 100%;
+
 }
 
 /* Accordion FAQ Controls */
