@@ -360,7 +360,8 @@ li {
     }
 
     .herocopy {
-        font-size: 20pt;
+        font-size: 30pt;
+        padding: 1rem;
     }
 
     .intro {
@@ -862,6 +863,16 @@ img {
     -webkit-appearance: none;
 }
 
+.ctabutton a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ctabutton:hover {
+    background: #1f4e89;
+}
+
 /* Accordion FAQ Controls */
 .faq {
     width: 100%;
@@ -910,7 +921,6 @@ summary {
     font-size: 20pt;
     text-align: center;
 }
-
 
 summary:before {
     position: absolute;
